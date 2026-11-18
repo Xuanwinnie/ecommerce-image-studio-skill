@@ -1,0 +1,34 @@
+# 真實商品與生成產物永遠只保留在本機
+output/
+inputs/
+private/
+customer-data/
+
+# 預設不追蹤點陣圖片，避免商品照片混入 repository
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.heif
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.avif
+
+# 只有經人工確認可公開的 Demo 圖片可以提交
+!docs/demo/
+!docs/demo/**
+
+# 秘密與本機環境
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python 產物
+__pycache__/
+*.py[cod]
+.pytest_cache/

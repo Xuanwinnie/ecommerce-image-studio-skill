@@ -1,0 +1,28 @@
+brand_name: "範例品牌"
+voice:
+  adjectives:
+    - "清楚"
+    - "可靠"
+  avoid:
+    - "誇大功效"
+    - "未證實的第一名宣稱"
+colors:
+  primary: "#1F2937"
+  secondary: "#F3F4F6"
+  accent: "#10B981"
+typography:
+  heading: "使用者指定字體"
+  body: "使用者指定字體"
+logo:
+  files: []
+  clear_space: "待使用者確認"
+  forbidden_changes:
+    - "不拉伸"
+    - "不改字"
+visual_style:
+  lighting: "柔和自然光"
+  background: "乾淨、低干擾"
+  composition: "商品優先，保留適度留白"
+claims:
+  confirmed: []
+  forbidden: []

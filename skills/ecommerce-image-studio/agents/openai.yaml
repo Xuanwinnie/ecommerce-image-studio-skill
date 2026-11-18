@@ -1,0 +1,6 @@
+interface:
+  display_name: "電商圖片工作室"
+  short_description: "把商品照片轉成可上架的跨平台圖片套組，並完成品質與規格驗收"
+  default_prompt: "使用 $ecommerce-image-studio，根據我的商品照片規劃並製作一套可上架的電商圖片。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,86 @@
+{
+  "job_id": "sample-sku-20261118-001",
+  "status": "planned",
+  "product": {
+    "sku": "sample-sku",
+    "category": "待確認",
+    "reference_images": ["inputs/front.png"],
+    "identity_lock": {
+      "shape": [],
+      "colors": [],
+      "materials": [],
+      "logos": [],
+      "fixed_text": [],
+      "components": [],
+      "must_not_change": [
+        "不得變更參考圖中的商品輪廓、Logo 與顏色"
+      ]
+    },
+    "confirmed_facts": [],
+    "unconfirmed": []
+  },
+  "platforms": [
+    {
+      "name": "amazon",
+      "market": "待確認",
+      "spec_checked_at": null,
+      "official_sources": []
+    }
+  ],
+  "brand": {
+    "brand_kit": "brand-kit.yaml",
+    "logo_files": []
+  },
+  "deliverables": [
+    {
+      "id": "01-hero",
+      "type": "hero",
+      "platform": "amazon",
+      "size": "2000x2000",
+      "viewpoint_policy": "correct_to_front",
+      "viewpoint_notes": "將隨手拍透視校正成正面商品視角，保留商品比例、Logo 與所有可見組件",
+      "copy": [],
+      "references": ["inputs/front.png"],
+      "status": "planned",
+      "output": "final/01-hero-amazon-1x1.png",
+      "qa": {
+        "profile": "amazon-main",
+        "result": null,
+        "identity": {
+          "result": null,
+          "score": null,
+          "threshold": 0.9,
+          "reviewer": null,
+          "reviewed_against": [],
+          "checks": {
+            "shape": null,
+            "colors": null,
+            "materials": null,
+            "logos": null,
+            "fixed_text": null,
+            "components": null,
+            "constraints": null,
+            "viewpoint": null
+          },
+          "notes": []
+        },
+        "notes": []
+      }
+    }
+  ],
+  "generation": {
+    "provider": "built-in",
+    "model": "auto",
+    "proof_first": true,
+    "dry_run": true,
+    "max_attempts": 3,
+    "max_calls": 1,
+    "max_cost": null,
+    "currency": null
+  },
+  "approval": {
+    "paid_generation_approved": false,
+    "approved_scope": null,
+    "approved_at": null
+  }
+}

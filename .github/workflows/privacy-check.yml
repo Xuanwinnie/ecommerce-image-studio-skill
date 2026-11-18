@@ -1,0 +1,34 @@
+name: 隱私與測試檢查
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取得程式碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安裝測試依賴
+        run: python -m pip install Pillow
+
+      - name: 檢查隱私資料
+        run: python scripts/privacy_check.py
+
+      - name: 執行測試
+        run: python -m unittest discover -s skills/ecommerce-image-studio/tests -v
+
+      - name: 驗證範例工作單
+        run: >-
+          python skills/ecommerce-image-studio/scripts/validate_manifest.py
+          skills/ecommerce-image-studio/assets/job-manifest.example.json
