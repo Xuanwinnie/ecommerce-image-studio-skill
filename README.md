@@ -72,3 +72,7 @@ python3 skills/ecommerce-image-studio/scripts/check_listing_image.py \
 ```
 
 真實商品圖片應放在此 repository 之外，或放在被 `.gitignore` 排除的本機目錄。只有已確認可公開的展示圖才能放進 `docs/demo/`。
+
+## License
+
+[MIT](LICENSE)
